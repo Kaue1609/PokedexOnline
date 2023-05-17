@@ -113,3 +113,21 @@ body {
     display: flex;
     justify-content: center;
 }
+
+#titulo-pagina{
+ animation-duration: 2s;
+ animation-name: piscar;
+ animation-iteration-count: infinite;
+}
+
+@keyframes piscar {
+    from{
+        color: red;
+    }
+    to{
+        color: black;
+    }
+    to{
+        color: gray;
+    }
+}
