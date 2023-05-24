@@ -52,8 +52,8 @@ main {
     row-gap: 15px;
     column-gap: 10px;
     grid-template-areas:
-    "001 002 003"
-    "004 005 006"
+    "poke01 poke02 poke03"
+    "poke04 poke05 poke06"
     ". . ."
     ". . ."
     ;
@@ -73,25 +73,22 @@ main {
 
 
 .caixa1 {
-    grid-area: 001;
-    background-color:aqua;
+    grid-area: poke01;
 }
 .caixa2 {
-    grid-area: 002;
-    background-color:red;
+    grid-area: poke02;
 }
 .caixa3 {
-    grid-area: 003;
-    background-color:blueviolet;
+    grid-area: poke03;
 }
 .caixa4 {
-    grid-area: 004;
+    grid-area: poke04;
 }
 .caixa5 {
-    grid-area: 005;
+    grid-area: poke05;
 }
 .caixa6 {
-    grid-area: 006;
+    grid-area: poke06;
 }
 
 
