@@ -74,6 +74,7 @@ main {
 
 .caixa1 {
     grid-area: poke01;
+    
 }
 .caixa2 {
     grid-area: poke02;
@@ -123,4 +124,12 @@ main {
     to{
         color: gray;
     }
+}  
+  
+.charmander{
+    grid-area: auto;
+    width: 100px;
+    height: 100px;
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png);
+    background-size: cover;
 }
