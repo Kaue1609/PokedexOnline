@@ -100,7 +100,7 @@ main {
 .imagem-caixa1 {
     width: 270px;
     height: 270px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png);
+    background-image: url(imagens/bulbasaur.png);
     background-size: cover;
     background-position: right 0,5px top 100px;
 }
@@ -108,7 +108,7 @@ main {
 .imagem-caixa2 {
     width: 270px;
     height: 270px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png);
+    background-image: url(imagens/ivysaur.png);
     background-size: cover;
     background-position: right 0,5px top 100px;
 }
@@ -116,7 +116,7 @@ main {
 .imagem-caixa3 {
     width: 270px;
     height: 230px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png);
+    background-image: url(imagens/Venosaur.png);
     background-size: cover;
     background-position: left 0,3px right 0,2px top 76px;
 }
@@ -124,7 +124,7 @@ main {
 .imagem-caixa4 {
     width: 270px;
     height: 270px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png);
+    background-image: url(imagens/charmander.png);
     background-size: cover;
     background-position: right 0,5px top 100px;
 }
@@ -132,7 +132,7 @@ main {
 .imagem-caixa5 {
     width: 270px;
     height: 270px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png);
+    background-image: url(imagens/charmeleon.png);
     background-size: cover;
     background-position: right 0,5px top 100px;
 }
@@ -140,7 +140,7 @@ main {
 .imagem-caixa6 {
     width: 270px;
     height: 270px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png);
+    background-image: url(imagens/charizard.png);
     background-size: cover;
     background-position: right 0,5px top 100px;
 }
