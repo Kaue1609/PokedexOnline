@@ -44,7 +44,7 @@ body {
 
 
 main {
-    background-color: blue;
+    background-color: rgb(142, 137, 137);
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -60,7 +60,7 @@ main {
 }
 
 .caixa-icon {
-    background-color: grey;
+    background-color: rgb(128, 128, 128);
     height: 320px;
     width: 250px;
     border: 3px, solid, black;
@@ -74,24 +74,76 @@ main {
 
 .caixa1 {
     grid-area: poke01;
+    background-color: #ffb753;
     
 }
 .caixa2 {
     grid-area: poke02;
+    background-color: #ffb753;
 }
 .caixa3 {
     grid-area: poke03;
+    background-color: #ffb753;
 }
 .caixa4 {
     grid-area: poke04;
+    background-color: #0c92f1;
 }
 .caixa5 {
     grid-area: poke05;
+    background-color: #0c92f1;
 }
 .caixa6 {
     grid-area: poke06;
+    background-color: #0c92f1;
+}
+.imagem-caixa1 {
+    width: 270px;
+    height: 270px;
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png);
+    background-size: cover;
+    background-position: right 0,5px top 100px;
 }
 
+.imagem-caixa2 {
+    width: 270px;
+    height: 270px;
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png);
+    background-size: cover;
+    background-position: right 0,5px top 100px;
+}
+
+.imagem-caixa3 {
+    width: 270px;
+    height: 230px;
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png);
+    background-size: cover;
+    background-position: left 0,3px right 0,2px top 76px;
+}
+
+.imagem-caixa4 {
+    width: 270px;
+    height: 270px;
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png);
+    background-size: cover;
+    background-position: right 0,5px top 100px;
+}
+
+.imagem-caixa5 {
+    width: 270px;
+    height: 270px;
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png);
+    background-size: cover;
+    background-position: right 0,5px top 100px;
+}
+
+.imagem-caixa6 {
+    width: 270px;
+    height: 270px;
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png);
+    background-size: cover;
+    background-position: right 0,5px top 100px;
+}
 
 .rodapé {
     height: 65px;
@@ -125,11 +177,3 @@ main {
         color: gray;
     }
 }  
-  
-.charmander{
-    grid-area: auto;
-    width: 100px;
-    height: 100px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png);
-    background-size: cover;
-}
