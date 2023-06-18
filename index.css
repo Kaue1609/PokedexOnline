@@ -74,54 +74,30 @@ main {
 
 .caixa1 {
     grid-area: poke01;
-    background-color: #ffb753;
+    background-color: #0c92f1;
     
 }
 .caixa2 {
     grid-area: poke02;
-    background-color: #ffb753;
+    background-color: #0c92f1;
 }
 .caixa3 {
     grid-area: poke03;
-    background-color: #ffb753;
+    background-color: #0c92f1;
 }
 .caixa4 {
     grid-area: poke04;
-    background-color: #0c92f1;
+    background-color:#ffb753;
 }
 .caixa5 {
     grid-area: poke05;
-    background-color: #0c92f1;
+    background-color: #ffb753;
 }
 .caixa6 {
     grid-area: poke06;
-    background-color: #0c92f1;
+    background-color: #ffb753;
 }
 .imagem-caixa1 {
-    width: 270px;
-    height: 270px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png);
-    background-size: cover;
-    background-position: right 0,5px top 100px;
-}
-
-.imagem-caixa2 {
-    width: 270px;
-    height: 270px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png);
-    background-size: cover;
-    background-position: right 0,5px top 100px;
-}
-
-.imagem-caixa3 {
-    width: 270px;
-    height: 230px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png);
-    background-size: cover;
-    background-position: left 0,3px right 0,2px top 76px;
-}
-
-.imagem-caixa4 {
     width: 270px;
     height: 270px;
     background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png);
@@ -129,7 +105,7 @@ main {
     background-position: right 0,5px top 100px;
 }
 
-.imagem-caixa5 {
+.imagem-caixa2 {
     width: 270px;
     height: 270px;
     background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png);
@@ -137,10 +113,34 @@ main {
     background-position: right 0,5px top 100px;
 }
 
+.imagem-caixa3 {
+    width: 270px;
+    height: 230px;
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png);
+    background-size: cover;
+    background-position: left 0,3px right 0,2px top 76px;
+}
+
+.imagem-caixa4 {
+    width: 270px;
+    height: 270px;
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png);
+    background-size: cover;
+    background-position: right 0,5px top 100px;
+}
+
+.imagem-caixa5 {
+    width: 270px;
+    height: 270px;
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png);
+    background-size: cover;
+    background-position: right 0,5px top 100px;
+}
+
 .imagem-caixa6 {
     width: 270px;
     height: 270px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png);
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png);
     background-size: cover;
     background-position: right 0,5px top 100px;
 }
