@@ -1,9 +1,10 @@
 body {
     background-color: white;
+    margin: 0px;
 }
 
 .conteiner {
-    background-color:rgb(0, 0, 214);
+    background-color: rgb(0, 0, 214);
     width: 100%;
     margin: 0;
 }
@@ -12,17 +13,22 @@ body {
     height: 65px;
     width: 100%;
     background-color: yellow;
-    align-content:flex-start;
+    align-content: flex-start;
 }
 
-#titulo-pagina {
-    color: white;
-    font-size: 20px;
+#imgheader {
+    margin-left: 19%;
+    padding-right: 2%;
+    border-right: solid 2px black;
+    height: 85%;
+    width: 120px;
+    background-image: url(imagens/120px-Pokédex_logo.png);
+    background-repeat: no-repeat;
 }
 
 .principal {
     width: 100%;
-    background-color:darkgray;
+    background-color: darkgray;
     display: flex;
 }
 
@@ -33,7 +39,7 @@ body {
 }
 
 #fontes-menu {
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     font-weight: 300;
     margin-top: 20px;
@@ -47,13 +53,13 @@ ul {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
     row-gap: 55px;
-    column-gap:2px;
+    column-gap: 2px;
     grid-template-areas:
-    "fogo planta eletrico agua"
-    "psiquico fada fantasma escuridao"
-    "lutador terra pedra dragao"
-    "voador inseto venenoso normall"
-    "metal gelo . ."
+        "fogo planta eletrico agua"
+        "psiquico fada fantasma escuridao"
+        "lutador terra pedra dragao"
+        "voador inseto venenoso normall"
+        "metal gelo . ."
 }
 
 .fire-type {
@@ -63,9 +69,7 @@ ul {
     background-image: url(imagens/image\ 22.png);
     background-repeat: no-repeat;
 }
-.fire-type:hover{
-    
-}
+
 .plant-type {
     grid-area: planta;
     height: 335%;
@@ -73,6 +77,7 @@ ul {
     background-image: url(imagens/image\ 23.png);
     background-repeat: no-repeat;
 }
+
 .eletric-type {
     grid-area: eletrico;
     height: 340%;
@@ -80,6 +85,7 @@ ul {
     background-image: url(imagens/image\ 26.png);
     background-repeat: no-repeat;
 }
+
 .water-type {
     grid-area: agua;
     height: 340%;
@@ -87,6 +93,7 @@ ul {
     background-image: url(imagens/image\ 24.png);
     background-repeat: no-repeat;
 }
+
 .psychic-type {
     grid-area: psiquico;
     height: 335%;
@@ -94,6 +101,7 @@ ul {
     background-image: url(imagens/image\ 27.png);
     background-repeat: no-repeat;
 }
+
 .fairy-type {
     grid-area: fada;
     height: 335%;
@@ -101,6 +109,7 @@ ul {
     background-image: url(imagens/image\ 29.png);
     background-repeat: no-repeat;
 }
+
 .fighter-type {
     grid-area: lutador;
     height: 335%;
@@ -108,6 +117,7 @@ ul {
     background-image: url(imagens/image\ 34.png);
     background-repeat: no-repeat;
 }
+
 .ground-type {
     grid-area: terra;
     height: 335%;
@@ -115,6 +125,7 @@ ul {
     background-image: url(imagens/image\ 25.png);
     background-repeat: no-repeat;
 }
+
 .rock-type {
     grid-area: pedra;
     height: 335%;
@@ -122,6 +133,7 @@ ul {
     background-image: url(imagens/image\ 37.png);
     background-repeat: no-repeat;
 }
+
 .flying-type {
     grid-area: voador;
     height: 335%;
@@ -129,6 +141,7 @@ ul {
     background-image: url(imagens/image\ 31.png);
     background-repeat: no-repeat;
 }
+
 .dragon-type {
     grid-area: dragao;
     height: 335%;
@@ -136,6 +149,7 @@ ul {
     background-image: url(imagens/image\ 30.png);
     background-repeat: no-repeat;
 }
+
 .dark-type {
     grid-area: escuridao;
     height: 335%;
@@ -143,6 +157,7 @@ ul {
     background-image: url(imagens/image\ 28.png);
     background-repeat: no-repeat;
 }
+
 .ghost-type {
     grid-area: fantasma;
     height: 335%;
@@ -150,6 +165,7 @@ ul {
     background-image: url(imagens/image\ 39.png);
     background-repeat: no-repeat;
 }
+
 .insect-type {
     grid-area: inseto;
     height: 335%;
@@ -157,6 +173,7 @@ ul {
     background-image: url(imagens/image\ 35.png);
     background-repeat: no-repeat;
 }
+
 .poison-type {
     grid-area: venenoso;
     height: 335%;
@@ -164,20 +181,23 @@ ul {
     background-image: url(imagens/image\ 32.png);
     background-repeat: no-repeat;
 }
-.normal-type{
+
+.normal-type {
     grid-area: normall;
     height: 335%;
     width: 335%;
     background-image: url(imagens/image\ 38.png);
     background-repeat: no-repeat;
 }
-.steel-type{
+
+.steel-type {
     grid-area: metal;
     height: 335%;
     width: 335%;
     background-image: url(imagens/image\ 33.png);
     background-repeat: no-repeat;
 }
+
 .ice-type {
     grid-area: gelo;
     height: 335%;
@@ -192,14 +212,14 @@ main {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:repeat(4, 2fr);
+    grid-template-rows: repeat(4, 2fr);
     row-gap: 15px;
     column-gap: 10px;
     grid-template-areas:
-    "poke01 poke02 poke03"
-    "poke04 poke05 poke06"
-    ". . ."
-    ". . ."
+        "poke01 poke02 poke03"
+        "poke04 poke05 poke06"
+        ". . ."
+        ". . ."
     ;
 }
 
@@ -219,34 +239,40 @@ main {
 .caixa1 {
     grid-area: poke01;
     background-color: #0c92f1;
-    
+
 }
+
 .caixa2 {
     grid-area: poke02;
     background-color: #0c92f1;
 }
+
 .caixa3 {
     grid-area: poke03;
     background-color: #0c92f1;
 }
+
 .caixa4 {
     grid-area: poke04;
-    background-color:#ffb753;
+    background-color: #ffb753;
 }
+
 .caixa5 {
     grid-area: poke05;
     background-color: #ffb753;
 }
+
 .caixa6 {
     grid-area: poke06;
     background-color: #ffb753;
 }
+
 .imagem-caixa1 {
     width: 270px;
     height: 270px;
     background-image: url(imagens/bulbasaur.png);
     background-size: cover;
-    background-position: right 0,5px top 100px;
+    background-position: right 0, 5px top 100px;
 }
 
 .imagem-caixa2 {
@@ -254,7 +280,7 @@ main {
     height: 270px;
     background-image: url(imagens/ivysaur.png);
     background-size: cover;
-    background-position: right 0,5px top 100px;
+    background-position: right 0, 5px top 100px;
 }
 
 .imagem-caixa3 {
@@ -262,7 +288,7 @@ main {
     height: 230px;
     background-image: url(imagens/Venosaur.png);
     background-size: cover;
-    background-position: left 0,3px right 0,2px top 76px;
+    background-position: left 0, 3px right 0, 2px top 76px;
 }
 
 .imagem-caixa4 {
@@ -270,7 +296,7 @@ main {
     height: 270px;
     background-image: url(imagens/charmander.png);
     background-size: cover;
-    background-position: right 0,5px top 100px;
+    background-position: right 0, 5px top 100px;
 }
 
 .imagem-caixa5 {
@@ -278,7 +304,7 @@ main {
     height: 270px;
     background-image: url(imagens/charmeleon.png);
     background-size: cover;
-    background-position: right 0,5px top 100px;
+    background-position: right 0, 5px top 100px;
 }
 
 .imagem-caixa6 {
@@ -286,7 +312,7 @@ main {
     height: 270px;
     background-image: url(imagens/charizard.png);
     background-size: cover;
-    background-position: right 0,5px top 100px;
+    background-position: right 0, 5px top 100px;
 }
 
 .rodapé {
@@ -294,30 +320,18 @@ main {
     width: 100%;
     background-color: yellow;
     display: flex;
-    align-content:flex-end;
+    align-content: flex-end;
 }
 
 .autores {
-    color:black;
+    color: black;
     font-size: 20px;
     display: flex;
     justify-content: center;
 }
 
-#titulo-pagina{
- animation-duration: 2s;
- animation-name: piscar;
- animation-iteration-count: infinite;
+#titulo-pagina {
+    animation-duration: 2s;
+    animation-name: piscar;
+    animation-iteration-count: infinite;
 }
-
-@keyframes piscar {
-    from{
-        color: red;
-    }
-    to{
-        color: black;
-    }
-    to{
-        color: gray;
-    }
-}  
