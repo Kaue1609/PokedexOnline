@@ -41,6 +41,151 @@ body {
     margin-left: 40px;
 }
 
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 55px;
+    column-gap:2px;
+    grid-template-areas:
+    "fogo planta eletrico agua"
+    "psiquico fada fantasma escuridao"
+    "lutador terra pedra dragao"
+    "voador inseto venenoso normall"
+    "metal gelo . ."
+}
+
+.fire-type {
+    grid-area: fogo;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 22.png);
+    background-repeat: no-repeat;
+}
+.fire-type:hover{
+    
+}
+.plant-type {
+    grid-area: planta;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 23.png);
+    background-repeat: no-repeat;
+}
+.eletric-type {
+    grid-area: eletrico;
+    height: 340%;
+    width: 340%;
+    background-image: url(imagens/image\ 26.png);
+    background-repeat: no-repeat;
+}
+.water-type {
+    grid-area: agua;
+    height: 340%;
+    width: 340%;
+    background-image: url(imagens/image\ 24.png);
+    background-repeat: no-repeat;
+}
+.psychic-type {
+    grid-area: psiquico;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 27.png);
+    background-repeat: no-repeat;
+}
+.fairy-type {
+    grid-area: fada;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 29.png);
+    background-repeat: no-repeat;
+}
+.fighter-type {
+    grid-area: lutador;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 34.png);
+    background-repeat: no-repeat;
+}
+.ground-type {
+    grid-area: terra;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 25.png);
+    background-repeat: no-repeat;
+}
+.rock-type {
+    grid-area: pedra;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 37.png);
+    background-repeat: no-repeat;
+}
+.flying-type {
+    grid-area: voador;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 31.png);
+    background-repeat: no-repeat;
+}
+.dragon-type {
+    grid-area: dragao;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 30.png);
+    background-repeat: no-repeat;
+}
+.dark-type {
+    grid-area: escuridao;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 28.png);
+    background-repeat: no-repeat;
+}
+.ghost-type {
+    grid-area: fantasma;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 39.png);
+    background-repeat: no-repeat;
+}
+.insect-type {
+    grid-area: inseto;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 35.png);
+    background-repeat: no-repeat;
+}
+.poison-type {
+    grid-area: venenoso;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 32.png);
+    background-repeat: no-repeat;
+}
+.normal-type{
+    grid-area: normall;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 38.png);
+    background-repeat: no-repeat;
+}
+.steel-type{
+    grid-area: metal;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 33.png);
+    background-repeat: no-repeat;
+}
+.ice-type {
+    grid-area: gelo;
+    height: 335%;
+    width: 335%;
+    background-image: url(imagens/image\ 36.png);
+    background-repeat: no-repeat;
+    color: black;
+}
 
 main {
     background-color: rgb(142, 137, 137);
