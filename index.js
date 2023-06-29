@@ -2,7 +2,6 @@ function oi() {
     alert("Muito obrigado por visitar o nosso site! <3")
 }
 
-
 /*let tipos = 'https://pokeapi.co/api/v2/pokemon/bulbasaur'
 const types = fetch(tipos)
 .then(response => response.json())
@@ -33,5 +32,4 @@ function exibirTipos(tipos) {
         document.body.appendChild(tipoEl)
 
     }
-
 }
