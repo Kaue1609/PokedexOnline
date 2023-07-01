@@ -213,7 +213,7 @@ ul {
 }
 
 main {
-    background-color: rgb(142, 137, 137);
+    background-color: rgb(39, 151, 129);
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -244,7 +244,7 @@ main {
 .caixa1 {
     grid-area: poke01;
     background-color: #0c92f1;
-    height: 755px;
+    height: 777px;
 
 }
 
@@ -276,7 +276,7 @@ main {
 .imagem-caixa1 {
     width: 250px;
     height: 245px;
-    background-image: url();
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png);
     background-size: cover;
     
 }
@@ -350,7 +350,7 @@ main {
 .caixa-interna-geral {
     width: 179px;
     height: center;
-    background-color: #267cc7;
+    background-color: #e74f4f;
     margin: 15px;
     padding: 20px;
     text-align: center;
@@ -369,5 +369,24 @@ main {
     height: 23px;
     background-color: #ffffff;
     margin: 5px;
+    text-align: center;
+}
+
+/*botão*/
+.btn {
+    height: 50px;
+    width:250px;
+    background-color:rgb(239, 243, 0);
+    border:2px solid rgb(0, 77, 0);
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.caixa-interna-det{
+    width: 179px;
+    height: center;
+    background-color: #e74f4f;
+    margin: 15px;
+    padding: 20px;
     text-align: center;
 }
