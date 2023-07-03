@@ -2,6 +2,9 @@ function oi() {
     alert("Muito obrigado por visitar o nosso site! <3")
 }
 
+function notfinished() {
+    alert("Em Construção")
+}
 /*let tipos = 'https://pokeapi.co/api/v2/pokemon/bulbasaur'
 const types = fetch(tipos)
 .then(response => response.json())
