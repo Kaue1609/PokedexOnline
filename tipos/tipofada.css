@@ -31,7 +31,7 @@ body {
     border-right: solid 2px black;
     height: 80%;
     width: 120px;
-    background-image: url(imagens/120px-Pokédex_logo.png);
+    background-image: url(/imagens/120px-Pokédex_logo.png);
     background-repeat: no-repeat;
 }
 /*topo*/
@@ -135,7 +135,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 22.png);
+    background-image: url(/imagens/image\ 22.png);
 }
 
 .plant-type {
@@ -143,7 +143,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 23.png);
+    background-image: url(/imagens/image\ 23.png);
 }
 
 .eletric-type {
@@ -151,7 +151,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 26.png);
+    background-image: url(/imagens/image\ 26.png);
 }
 
 .water-type {
@@ -159,7 +159,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 24.png);
+    background-image: url(/imagens/image\ 24.png);
 }
 
 .psychic-type {
@@ -167,7 +167,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 27.png);
+    background-image: url(/imagens/image\ 27.png);
 }
 
 .fairy-type {
@@ -175,7 +175,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 29.png);
+    background-image: url(/imagens/image\ 29.png);
 }
 
 .fighter-type {
@@ -183,7 +183,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 34.png);
+    background-image: url(/imagens/image\ 34.png);
 }
 
 .ground-type {
@@ -191,7 +191,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 25.png);
+    background-image: url(/imagens/image\ 25.png);
 }
 
 .rock-type {
@@ -199,7 +199,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 37.png);
+    background-image: url(/imagens/image\ 37.png);
 }
 
 .flying-type {
@@ -207,7 +207,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 31.png);
+    background-image: url(/imagens/image\ 31.png);
 }
 
 .dragon-type {
@@ -215,7 +215,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 30.png);
+    background-image: url(/imagens/image\ 30.png);
 }
 
 .dark-type {
@@ -223,7 +223,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 28.png);
+    background-image: url(/imagens/image\ 28.png);
 }
 
 .ghost-type {
@@ -231,7 +231,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 39.png);
+    background-image: url(/imagens/image\ 39.png);
 }
 
 .insect-type {
@@ -239,7 +239,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 35.png);
+    background-image: url(/imagens/image\ 35.png);
 }
 
 .poison-type {
@@ -247,7 +247,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 32.png);
+    background-image: url(/imagens/image\ 32.png);
 }
 
 .normal-type {
@@ -255,7 +255,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 38.png);
+    background-image: url(/imagens/image\ 38.png);
 }
 
 .steel-type {
@@ -263,7 +263,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 33.png);
+    background-image: url(/imagens/image\ 33.png);
 }
 
 .ice-type {
@@ -271,7 +271,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(imagens/image\ 36.png);
+    background-image: url(/imagens/image\ 36.png);
 }
 
 /*Grid das caixas*/
@@ -280,13 +280,12 @@ main {
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 3fr);
     row-gap: 10px;
     column-gap: 1px;
     grid-template-areas:
-        "poke01 poke02 poke03"
-        "poke04 poke05 poke06"
         "poke07 . ."
+        ". . ."
     ;
 }
 
@@ -308,54 +307,6 @@ main {
 }
 
 /*box modeling das caixas*/
-.caixa1 {
-    grid-area: poke01;
-    background-color: #0c92f1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.caixa2 {
-    grid-area: poke02;
-    background-color: #0c92f1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.caixa3 {
-    grid-area: poke03;
-    background-color: #0c92f1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.caixa4 {
-    grid-area: poke04;
-    background-color: #ffb753;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.caixa5 {
-    grid-area: poke05;
-    background-color: #ffb753;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.caixa6 {
-    grid-area: poke06;
-    background-color: #ffb753;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .caixa7 {
     grid-area: poke07;
     background-color: #cd6cd6;
@@ -365,89 +316,15 @@ main {
 }
 
 /*imagens dos pokémons nas caixas*/
-.imagem-caixa1 {
-    width: 270px;
-    height: 270px;
-    background-image: url(imagens/bulbasaur.png);
-    background-size: cover;
-    background-position: right 0, 5px top 100px;
-}
-
-.imagem-caixa2 {
-    width: 270px;
-    height: 270px;
-    background-image: url(imagens/ivysaur.png);
-    background-size: cover;
-    background-position: right 0, 5px top 100px;
-}
-
-.imagem-caixa3 {
-    width: 270px;
-    height: 270px;
-    background-image: url(imagens/Venosaur.png);
-    background-size: cover;
-    background-position: left 0, 3px right 0, 2px top 76px;
-}
-
-.imagem-caixa4 {
-    width: 270px;
-    height: 270px;
-    background-image: url(imagens/charmander.png);
-    background-size: cover;
-    background-position: right 0, 5px top 100px;
-}
-
-.imagem-caixa5 {
-    width: 270px;
-    height: 270px;
-    background-image: url(imagens/charmeleon.png);
-    background-size: cover;
-    background-position: right 0, 5px top 100px;
-}
-
-.imagem-caixa6 {
-    width: 270px;
-    height: 270px;
-    background-image: url(imagens/charizard.png);
-    background-size: cover;
-    background-position: right 0, 5px top 100px;
-}
-
 .imagem-caixa7 {
     width: 270px;
     height: 270px;
-    background-image: url(imagens/jigglepuff.png);
+    background-image: url(/imagens/jigglepuff.png);
     background-size: cover;
     background-position: right 0, 5px top 100px;
 }
 
 /*botões da caixa*/
-.grass-btn {
-    height: 50px;
-    width: 175px;
-    background-color:rgb(0, 243, 0);
-    border:2px solid rgb(0, 77, 0);
-    border-radius: 25px;
-    font-size: 22px;
-}
-.grass-btn:hover {
-    width: 225px;
-    background-color:rgb(0, 194, 0);
-    transition: width 1s;
-}
-.fire-btn {
-    height: 50px;
-    width: 175px;
-    background-color:rgb(250, 37, 37);
-    border:2px solid rgb(134, 0, 0);
-    border-radius: 25px;
-    font-size: 22px;
-}
-.fire-btn:hover {
-    width: 225px;
-    background-color:rgb(196, 0, 0);
-    transition: width 1s;
-}
 .fairy-btn {
     height: 50px;
     width: 175px;

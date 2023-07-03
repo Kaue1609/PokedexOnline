@@ -5,6 +5,17 @@ function oi() {
 function notfinished() {
     alert("Em Construção")
 }
+
+function MostrarTipos() {
+    let recolhe = document.getElementById("Recolher");
+
+    if(recolhe.style.display == "none") {
+        recolhe.style.display = "inline";
+    }
+    else {
+        recolhe.style.display = "none"
+    }
+}
 /*let tipos = 'https://pokeapi.co/api/v2/pokemon/bulbasaur'
 const types = fetch(tipos)
 .then(response => response.json())
