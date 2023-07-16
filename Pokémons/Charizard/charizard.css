@@ -1,20 +1,28 @@
-*{font-family: 'Belanosima', sans-serif;}
+* {
+    font-family: 'Belanosima', sans-serif;
+}
 
 body {
     background-color: white;
     margin: 0px;
 }
 
-.conteiner {
+/*cursor*/
+.mause {
+    cursor: pointer;
+}
+
+#conteiner {
     background-color: rgb(0, 0, 214);
     width: 100%;
     margin: 0;
 }
 
+/*topo*/
 .cabeçalho {
-    height: 65px;
+    height: 70px;
     width: 100%;
-    background-color: yellow;
+    background-color: rgb(252, 252, 31);
     display: flex;
     align-items: center;
 }
@@ -29,35 +37,85 @@ body {
     background-repeat: no-repeat;
 }
 
+/*topo*/
 
-.principal {
+/*Conteúdo*/
+#principal {
     width: 100%;
-    background-color: darkgray;
+    background-color: rgb(255, 255, 255);
     display: flex;
 }
 
-.menu {
-    background-color: black;
+/*nav*/
+#menu {
+    background-color: rgb(0, 0, 0);
     color: white;
     width: 30%;
 }
 
-
-#fontes-menu {
-
-    font-size: 30px;
-    font-weight: 300;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 40px;
+/*As 3 listas do menu*/
+#inicio {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: solid 2px grey;
+    user-select: none;
 }
 
-ul {
-    list-style: none;
+#config {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: solid 2px grey;
+    user-select: none;
+}
+
+#type-list {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    user-select: none;
+}
+
+#Recolher {
+    display: none;
+}
+
+/*icones do menu*/
+.material-icons.md-24 {
+    font-size: 50px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+/*Fontes do menu*/
+.fontes-menu {
+    font-size: 35px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.fontes-menu:visited {
+    color: white;
+}
+
+/*grid dos botões de tipos*/
+#btn-tipos {
+    margin-left: 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    row-gap: 55px;
+    row-gap: 30px;
     column-gap: 2px;
     grid-template-areas:
         "fogo planta eletrico agua"
@@ -67,218 +125,259 @@ ul {
         "metal gelo . ."
 }
 
+/*botão padrão dos tipos*/
+.input {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: solid 4px black;
+}
+
+.input:hover {
+    border: none;
+}
+
+/*imagens inseridas nos botões de tipos*/
 .fire-type {
     grid-area: fogo;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 22.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 22.png);
 }
 
 .plant-type {
     grid-area: planta;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 23.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 23.png);
 }
 
 .eletric-type {
     grid-area: eletrico;
-    height: 340%;
-    width: 340%;
-    background-image: url(imagens/image\ 26.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 26.png);
 }
 
 .water-type {
     grid-area: agua;
-    height: 340%;
-    width: 340%;
-    background-image: url(imagens/image\ 24.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 24.png);
 }
 
 .psychic-type {
     grid-area: psiquico;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 27.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 27.png);
 }
 
 .fairy-type {
     grid-area: fada;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 29.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 29.png);
 }
 
 .fighter-type {
     grid-area: lutador;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 34.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 34.png);
 }
 
 .ground-type {
     grid-area: terra;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 25.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 25.png);
 }
 
 .rock-type {
     grid-area: pedra;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 37.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 37.png);
 }
 
 .flying-type {
     grid-area: voador;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 31.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 31.png);
 }
 
 .dragon-type {
     grid-area: dragao;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 30.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 30.png);
 }
 
 .dark-type {
     grid-area: escuridao;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 28.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 28.png);
 }
 
 .ghost-type {
     grid-area: fantasma;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 39.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 39.png);
 }
 
 .insect-type {
     grid-area: inseto;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 35.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 35.png);
 }
 
 .poison-type {
     grid-area: venenoso;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 32.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 32.png);
 }
 
 .normal-type {
     grid-area: normall;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 38.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 38.png);
 }
 
 .steel-type {
     grid-area: metal;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 33.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    background-image: url(imagens/image\ 33.png);
 }
 
 .ice-type {
     grid-area: gelo;
-    height: 335%;
-    width: 335%;
-    background-image: url(imagens/image\ 36.png);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    color: black;
+    background-image: url(imagens/image\ 36.png);
 }
 
+/*Grid das caixas*/
 main {
-    background-color: rgb(39, 151, 129);
+    background: transparent url(https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png);
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 2fr);
-    row-gap: 15px;
-    column-gap: 10px;
+    grid-template-rows: repeat(3, 2fr);
+    row-gap: 10px;
+    column-gap: 1px;
     grid-template-areas:
         "poke01 poke02 poke03"
         "poke04 poke05 poke06"
-        ". . ."
-        ". . ."
+        "poke07 . ."
     ;
 }
 
+/*modelo padrão de caixa*/
 .caixa-icon {
     background-color: rgb(128, 128, 128);
-    height: 320px;
-    width: 250px;
-    border: 3px, solid, black;
+    height: 350px;
+    width: 260px;
+    border: 4px, solid, black;
     border-style: outset;
     padding: 5px;
-    margin: 10px;
-    box-shadow: 7px 7px rgba(97, 97, 97, 0.829);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 18px;
     border-radius: 10%;
 }
 
+.caixa-icon:hover {
+    box-shadow: 12px 10px rgba(68, 68, 68, 0.479);
+}
 
+/*box modeling das caixas*/
 .caixa1 {
     grid-area: poke01;
     background-color: #0c92f1;
-    height: 777px;
-
+    height: 800px;
 }
 
 .caixa2 {
     grid-area: poke02;
     background-color: #0c92f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caixa3 {
     grid-area: poke03;
     background-color: #0c92f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caixa4 {
     grid-area: poke04;
     background-color: #ffb753;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caixa5 {
     grid-area: poke05;
     background-color: #ffb753;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .caixa6 {
     grid-area: poke06;
     background-color: #ffb753;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.caixa7 {
+    grid-area: poke07;
+    background-color: #cd6cd6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*imagens dos pokémons nas caixas*/
 .imagem-caixa1 {
-    width: 250px;
-    height: 245px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png);
+    width: 270px;
+    height: 270px;
+    background-image: url(imagens/bulbasaur.png);
     background-size: cover;
-    
+    background-position: right 0, 5px top 100px;
 }
 
 .imagem-caixa2 {
@@ -291,7 +390,7 @@ main {
 
 .imagem-caixa3 {
     width: 270px;
-    height: 230px;
+    height: 270px;
     background-image: url(imagens/Venosaur.png);
     background-size: cover;
     background-position: left 0, 3px right 0, 2px top 76px;
@@ -321,40 +420,126 @@ main {
     background-position: right 0, 5px top 100px;
 }
 
-.rodapé {
-    height: 65px;
+.imagem-caixa7 {
+    width: 270px;
+    height: 270px;
+    background-image: url(imagens/jigglepuff.png);
+    background-size: cover;
+    background-position: right 0, 5px top 100px;
+}
+
+/*botões da caixa*/
+.grass-btn {
+    height: 50px;
+    width: 175px;
+    background-color: rgb(0, 243, 0);
+    border: 2px solid rgb(0, 77, 0);
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.fire-btn {
+    height: 50px;
+    width: 175px;
+    background-color: rgb(250, 37, 37);
+    border: 2px solid rgb(134, 0, 0);
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.fire-btn:hover {
+    width: 225px;
+    background-color: rgb(196, 0, 0);
+    transition: width 1s;
+}
+
+.fairy-btn {
+    height: 50px;
+    width: 175px;
+    background-color: rgb(250, 136, 206);
+    border: 2px solid rgb(197, 47, 202);
+    border-radius: 25px;
+    font-size: 22px;
+}
+
+.fairy-btn:hover {
+    width: 225px;
+    background-color: rgb(252, 108, 196);
+    transition: width 1s;
+}
+
+/*numero do pokemon*/
+#numero {
+    padding-top: 8px;
+    padding-left: 3px;
+    height: 20px;
     width: 100%;
-    background-color: yellow;
     display: flex;
-    justify-content: space-evenly;
+    color: black;
+    justify-self: flex-start;
+}
+
+/*Conteúdo*/
+
+/*sopé*/
+#rodapé {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(252, 252, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
 .autores {
-    color: black;
     font-size: 20px;
-    padding-right: 100px;
-    border-right: solid 2px black;
+    color: black;
+    padding-bottom: 10px;
 }
 
-#b1 {
+.linkGitHub {
+    height: 50px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.gitlogo {
+    height: 50px;
+    width: 50px;
+}
+
+.gitlogo:first-child {
+    padding-right: 30px;
+}
+
+.gitlogo:last-child {
+    padding-left: 30px;
+}
+
+.btn-obri {
     background-color: rgb(73, 0, 102);
     border-style: solid;
     border-radius: 10px;
     color: whitesmoke;
-    height: 40px;
-    width: 120px;
-    font-size: 20px;
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
 }
+
+/*sopé*/
 
 .caixa-interna-geral {
     width: 179px;
     height: center;
-    background-color: #e74f4f;
+    background-color:#e74f4f;
     margin: 15px;
     padding: 20px;
     text-align: center;
-  }
+}
 
 .caixa-interna-sobre {
     width: 55px;
@@ -372,23 +557,32 @@ main {
     text-align: center;
 }
 
-/*botão*/
-.btn {
-    height: 50px;
-    width:250px;
-    background-color:rgb(239, 243, 0);
-    border:2px solid rgb(0, 77, 0);
-    border-radius: 25px;
-    font-size: 22px;
+.caixa-interna-det {
+    width: 179px;
+    height: center;
+    background-color:#e74f4f;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
 }
 
-.caixa-interna-det{
+.nome-bulbasaur {
     width: 179px;
     height: center;
     background-color: #e74f4f;
     margin: 15px;
     padding: 20px;
     text-align: center;
+}
+
+/*botão*/
+.btn {
+    width: 250px;
+    height: 50px;
+    background-color: rgb(239, 243, 0);
+    border: 2px solid rgb(0, 77, 0);
+    border-radius: 25px;
+    font-size: 22px;
 }
 
 

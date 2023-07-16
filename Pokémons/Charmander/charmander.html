@@ -13,83 +13,117 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Projeto final</title>
 </head>
 
 <body>
-    <div class="conteiner">
+    <div id="conteiner">
+
         <header class="cabeçalho">
             <div id="imgheader"></div>
         </header>
 
-        <div class="principal">
-            <nav class="menu">
-                <div id="fontes-menu">inicio</div>
-                <hr>
-                <div id="fontes-menu">Buscar...</div>
-                <hr>
-                <div>
-                    <h1 id="fontes-menu">Tipos</h1>
-                    <ul>
-                        <li class="fire-type"></li>
-                        <li class="plant-type"></li>
-                        <li class="eletric-type"></li>
-                        <li class="water-type"></li>
-                        <li class="psychic-type"></li>
-                        <li class="fairy-type"></li>
-                        <li class="fighter-type"></li>
-                        <li class="ground-type"></li>
-                        <li class="rock-type"></li>
-                        <li class="flying-type"></li>
-                        <li class="dragon-type"></li>
-                        <li class="dark-type"></li>
-                        <li class="ghost-type"></li>
-                        <li class="insect-type"></li>
-                        <li class="poison-type"></li>
-                        <li class="normal-type"></li>
-                        <li class="steel-type"></li>
-                        <li class="ice-type">.</li>
-                    </ul>
+        <div id="principal">
+            <nav id="menu">
+
+                <a href="index.html" class="fontes-menu mause">
+                    <div id="inicio">
+                        <span class="material-icons md-24 md-light">home</span>
+                        <h1 class="fontes-menu">Início</h1>
+                    </div>
+                </a>
+                <div id="config">
+                    <span class="material-icons md-24 md-light">settings</span>
+                </div>
+                <div id="type-list">
+                    <imput onclick="MostrarTipos()" id="type-list" class="mause">
+                        <span class="material-icons md-24 md-light">sort</span>
+                        <h1 class="fontes-menu">Tipos</h1>
+                    </imput>
+
+                </div>
+                <div id="Recolher">
+                    <div id="btn-tipos">
+                        <a href="tipos/Fire-type/tipofogo.html"><button class="fire-type input"></button></a>
+                        <a href="tipos/Plant-type/tipoplanta.html"><button class="plant-type input"></button></a>
+                        <a><button onclick="notfinished()" class="eletric-type input"></button></a>
+                        <a><button onclick="notfinished()" class="water-type input"></button></a>
+                        <a><button onclick="notfinished()" class="psychic-type input"></button></a>
+                        <a href="tipos/Fairy-type/tipofada.html"><button class="fairy-type input"></button></a>
+                        <a><button onclick="notfinished()" class="ghost-type input"></button></a>
+                        <a><button onclick="notfinished()" class="fighter-type input"></button></a>
+                        <a><button onclick="notfinished()" class="ground-type input"></button></a>
+                        <a><button onclick="notfinished()" class="rock-type input"></button></a>
+                        <a><button onclick="notfinished()" class="flying-type input"></button></a>
+                        <a><button onclick="notfinished()" class="dragon-type input"></button></a>
+                        <a><button onclick="notfinished()" class="dark-type input"></button></a>
+                        <a><button onclick="notfinished()" class="insect-type input"></button></a>
+                        <a><button onclick="notfinished()" class="poison-type input"></button></a>
+                        <a><button onclick="notfinished()" class="normal-type input"></button></a>
+                        <a><button onclick="notfinished()" class="steel-type input"></button></a>
+                        <a><button onclick="notfinished()" class="ice-type input"></button></a>
+                    </div>
                 </div>
             </nav>
             <main class="conteúdo">
                 <div class="caixa-icon caixa1"> <a
-                        href="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"></a>
+                        href="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"></a>
                     <div class="imagem-caixa1"></div>
-                    <button class="btn">C h a r m a n d e r</button>
+                    <button class="btn">charmander</button>
                     <div class="caixa-interna-geral">Geral</div>
-                    <p>Tipo: Fogo</p>
-                    <p>espécie: Pokémon Lagarto</p>
-                    <p>habilidade: Chama</p>
+                    <p>Tipo: fogo</p>
+                    <p>espécie: pokémon lagarto</p>
+                    <p>habilidade: blaze</p>
                     <div class="caixa-interna-det">Detalhes</div>
-                    <p>gênero: Masculino</p>
+                    <p>gênero: msaculino/feminino</p>
                     <p>nº na pokedex: #0004</p>
-                    <p>peso: 8,5 kg</p>
-                    <p>altura: 0,6 m</p>
-                    <p>habitat: Vulcões ativos, montanhas e cavernas</p>
-                    <p>geração: Primeira</p>
+                    <p>peso: 8,5kg</p>
+                    <p>altura: 0,6m</p>
+                    <p>habitat: vulcões ativos e cavernas</p>
+                    <p>geração: primeira</p>
                 </div>
                 <div>
                     <div class="caixa-interna-sobre">sobre</div>
-                    <p>Charmander(em japonês: ヒトカゲ Hitokage) é um Pokémon do tipo Fogo, um dos iniciais da região de
-                        Kanto, junto com Squirtle e Bulbasaur</p>
+                    <p>Charmander (japonês: ヒトカゲ Hitokage) é um Pokémon do tipo Fogo introduzido na Geração I.
+
+                        Ele evolui para Charmeleon a partir do nível 16, que evolui para Charizard a partir do nível 36.
+
+                        Junto com Bulbasaur e Squirtle, Charmander é um dos três Pokémon iniciais de Kanto disponíveis
+                        no início de Pokémon Red, Green, Blue, FireRed e LeafGreen.</p>
                     <div class="caixa-interna-fisio">Fisiologia</div>
-                    <p>Charmander é um pequeno bípede, semelhante a um lagarto. A maioria de seu corpo é de cor laranja,
-                        enquanto a sua barriga é uma cor amarelo claro. Charmander, juntamente com todas as suas formas
-                        evoluídos, tem uma chama que está constantemente queimando sobre a extremidade da cauda.</p>
+                    <p>Charmander é um Pokémon reptiliano bípede com corpo principalmente laranja e olhos azuis. Sua
+                        parte inferior do peito para baixo e as solas dos pés são de cor creme. Ele tem duas pequenas
+                        presas visíveis na mandíbula superior e duas presas menores na mandíbula inferior. Um fogo arde
+                        na ponta da cauda fina deste Pokémon e arde lá desde o nascimento de Charmander. A chama pode
+                        ser usada como uma indicação da saúde e do humor de Charmander, queimando intensamente quando o
+                        Pokémon está forte, fracamente quando está exausto, vacilando quando está feliz e brilhando
+                        quando está enfurecido. Dizem que Charmander morreria se sua chama se apagasse. No entanto, se o
+                        Pokémon estiver saudável, a chama continuará queimando mesmo se ficar um pouco molhada e fumegar
+                        na chuva.
+
+                        Charmander pode ser encontrado em áreas quentes e montanhosas. No entanto, é encontrado com
+                        muito mais frequência na posse de treinadores. Conforme mostrado em Pokémon Snap e New Pokémon
+                        Snap, Charmander exibe comportamento de matilha, chamando outros de sua espécie se encontrar
+                        comida e observando as chamas nas caudas uns dos outros para garantir que não se apaguem.</p>
+
                 </div>
             </main>
         </div>
 
-        <footer class="rodapé">
-
-            <spam class="autores">Autores: Alisson Lima e Kauê Martins</spam>
-            <button onclick="oi()" id="b1">Obrigado!</button>
-
+        <footer id="rodapé">
+            <span class="autores">Alisson Lima & Kauê Martins</span>
+            <div class="linkGitHub">
+                <a href="https://github.com/alnxli"><img class="gitlogo" src="imagens/logo GitHub.png"></a>
+                <a href="https://github.com/Kaue1609"><img class="gitlogo" src="imagens/logo GitHub.png"></a>
+            </div>
+            <button onclick="oi()" class="btn-obri mause">Obrigado!</button>
         </footer>
 
-        <script src="index.js"></script>
     </div>
+
+    <script src="index.js"></script>
+
 </body>
 
 </html>

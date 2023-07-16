@@ -13,90 +13,121 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Projeto final</title>
 </head>
 
 <body>
-    <div class="conteiner">
+    <div id="conteiner">
+
         <header class="cabeçalho">
             <div id="imgheader"></div>
         </header>
 
-        <div class="principal">
-            <nav class="menu">
-                <div id="fontes-menu">inicio</div>
-                <hr>
-                <div id="fontes-menu">Buscar...</div>
-                <hr>
-                <div>
-                    <h1 id="fontes-menu">Tipos</h1>
-                    <ul>
-                        <li class="fire-type"></li>
-                        <li class="plant-type"></li>
-                        <li class="eletric-type"></li>
-                        <li class="water-type"></li>
-                        <li class="psychic-type"></li>
-                        <li class="fairy-type"></li>
-                        <li class="fighter-type"></li>
-                        <li class="ground-type"></li>
-                        <li class="rock-type"></li>
-                        <li class="flying-type"></li>
-                        <li class="dragon-type"></li>
-                        <li class="dark-type"></li>
-                        <li class="ghost-type"></li>
-                        <li class="insect-type"></li>
-                        <li class="poison-type"></li>
-                        <li class="normal-type"></li>
-                        <li class="steel-type"></li>
-                        <li class="ice-type"></li>
-                    </ul>
+        <div id="principal">
+            <nav id="menu">
+
+                <a href="index.html" class="fontes-menu mause">
+                    <div id="inicio">
+                        <span class="material-icons md-24 md-light">home</span>
+                        <h1 class="fontes-menu">Início</h1>
+                    </div>
+                </a>
+                <div id="config">
+                    <span class="material-icons md-24 md-light">settings</span>
+                </div>
+                <div id="type-list">
+                    <imput onclick="MostrarTipos()" id="type-list" class="mause">
+                        <span class="material-icons md-24 md-light">sort</span>
+                        <h1 class="fontes-menu">Tipos</h1>
+                    </imput>
+
+                </div>
+                <div id="Recolher">
+                    <div id="btn-tipos">
+                        <a href="tipos/Fire-type/tipofogo.html"><button class="fire-type input"></button></a>
+                        <a href="tipos/Plant-type/tipoplanta.html"><button class="plant-type input"></button></a>
+                        <a><button onclick="notfinished()" class="eletric-type input"></button></a>
+                        <a><button onclick="notfinished()" class="water-type input"></button></a>
+                        <a><button onclick="notfinished()" class="psychic-type input"></button></a>
+                        <a href="tipos/Fairy-type/tipofada.html"><button class="fairy-type input"></button></a>
+                        <a><button onclick="notfinished()" class="ghost-type input"></button></a>
+                        <a><button onclick="notfinished()" class="fighter-type input"></button></a>
+                        <a><button onclick="notfinished()" class="ground-type input"></button></a>
+                        <a><button onclick="notfinished()" class="rock-type input"></button></a>
+                        <a><button onclick="notfinished()" class="flying-type input"></button></a>
+                        <a><button onclick="notfinished()" class="dragon-type input"></button></a>
+                        <a><button onclick="notfinished()" class="dark-type input"></button></a>
+                        <a><button onclick="notfinished()" class="insect-type input"></button></a>
+                        <a><button onclick="notfinished()" class="poison-type input"></button></a>
+                        <a><button onclick="notfinished()" class="normal-type input"></button></a>
+                        <a><button onclick="notfinished()" class="steel-type input"></button></a>
+                        <a><button onclick="notfinished()" class="ice-type input"></button></a>
+                    </div>
                 </div>
             </nav>
             <main class="conteúdo">
                 <div class="caixa-icon caixa1"> <a
                         href="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"></a>
                     <div class="imagem-caixa1"></div>
-                    <button class="btn">C h a r i z a r d</button>
+                    <button class="btn">charizard</button>
                     <div class="caixa-interna-geral">Geral</div>
-                    <p>Tipo: Fogo/Voador </p>
-                    <p>espécie: Pokémon Voador </p>
-                    <p>habilidade: Chama</p>
+                    <p>Tipo: fogo/chama</p>
+                    <p>espécie: pokémon lagarto</p>
+                    <p>habilidade: blaze</p>
                     <div class="caixa-interna-det">Detalhes</div>
-                    <p>gênero: Masculino</p>
+                    <p>gênero: masculino/feminino </p>
                     <p>nº na pokedex: #0006</p>
                     <p>peso: 90,5kg</p>
                     <p>altura: 1,7m</p>
-                    <p>habitat: Montanhas</p>
+                    <p>habitat: montanhas e cavernas</p>
                     <p>geração: primeira</p>
                 </div>
                 <div>
                     <div class="caixa-interna-sobre">sobre</div>
-                    <p>Charizard (Em japonês: リザードン Rizaadon) é o do tipo Fogo Pokémon inicial da região de Kanto,
-                        evoluiu de Charmeleon e a evolução final do Charmander. Charizard é a versão mascote de Pokémon
-                        Red e seu remake, Pokémon FireRed.</p>
+                    <p>Charizard (em japonês: リザードン Lizardon) é um Pokémon do tipo Fogo e Voador.
+                        Ele é a forma evoluída de Charmeleon quando chega no nível 36. Ele tambem é a forma final de
+                        Charmander.</p>
                     <div class="caixa-interna-fisio">Fisiologia</div>
-                    <p>Charizard é um grande dragão-como Pokémon que é muito diferente de sua forma pré-evoluída. A cor
-                        vermelha da pele do Charmeleon não é mais aparente, como Charizard parece ter revertido para a
-                        cor laranja / amarelo de Charmander. O fogo na cauda de Charizard vai mudar para uma cor
-                        branco-azulada se furioso. O único chifre que estava na parte de trás da cabeça é agora dois, um
-                        em cada lado. A diferença mais notável entre Charizard e suas formas pré-evoluídas são as
-                        grandes asas que se desenvolveram em suas costas, que dão Charizard a capacidade de voar. Dada a
-                        sua aparência dragão-like, faz sentido que Charizard é capaz de aprender muitos movimentos do
-                        dragão.</p>
+                    <p>Ao contrário de suas pré-evoluções, tem asas que lhe permite voar, é um pokemon muito parecido
+                        com um dragão. Como suas formas anteriores, é bípede e tem uma longa cauda com uma chama que só
+                        se apaga quando ele morre. Tem três garras extremamente afiadas, dígitos distintos, um longo
+                        pescoço, e dois chifres salientes na parte de trás de sua cabeça. A frente de suas duas asas é
+                        azul-petróleo, enquanto a traseira é laranja como a maior parte de seu corpo. Embora pouco
+                        visível, a iris de Charizard é azul de cor clara. Sua barriga e parte inferior das patas são de
+                        cor creme.MCharizard
+                        Mega Charizard Y.
+
+                        Como mega Charizard X, sua pele fica preta com um lado azul da mandíbula inferior até a ponta da
+                        cauda. Ele ganha duas curvas, pontos azuis em cada ombro e as pontas de seus chifres ficar azul
+                        também. Agora, há dois pontos curvados na parte de trás do seu pescoço. As bordas das suas asas
+                        são divididos em seções grandes, arredondadas e da articulação tem um pico curvado sobre ele.
+                        Mega Charizard X respira chamas azuis os lados de sua boca, e a chama em sua cauda agora queima
+                        azul com o aumento do calor também.
+                        Como mega Charizard Y, este Pokémon cresce um terceiro chifre na parte de trás de sua cabeça
+                        entre os dois original, que agora são mais curtos. As pequenas asas desenvolver em seus pulsos,
+                        enquanto os em suas costas se tornam maiores e agora têm bordas irregulares. Existem várias
+                        espinhas ao longo do comprimento da cauda. Ele mantém o seu creme de baixo, mas agora se estende
+                        até o seu maxilar inferior. Mega Charizard Y é dito ter incrível proeza de vôo, podendo alcançar
+                        alturas incríveis.</p>
 
                 </div>
             </main>
         </div>
 
-        <footer class="rodapé">
-
-            <spam class="autores">Autores: Alisson Lima e Kauê Martins</spam>
-            <button onclick="oi()" id="b1">Obrigado!</button>
-
+        <footer id="rodapé">
+            <span class="autores">Alisson Lima & Kauê Martins</span>
+            <div class="linkGitHub">
+                <a href="https://github.com/alnxli"><img class="gitlogo" src="imagens/logo GitHub.png"></a>
+                <a href="https://github.com/Kaue1609"><img class="gitlogo" src="imagens/logo GitHub.png"></a>
+            </div>
+            <button onclick="oi()" class="btn-obri mause">Obrigado!</button>
         </footer>
 
-        <script src="index.js"></script>
     </div>
+
+    <script src="index.js"></script>
+
 </body>
 
 </html>
