@@ -33,7 +33,7 @@ body {
     border-right: solid 2px black;
     height: 80%;
     width: 120px;
-    background-image: url(imagens/120px-Pokédex_logo.png);
+    background-image: url(https://archives.bulbagarden.net/media/upload/thumb/archive/4/4b/20100413180610%21Pok%C3%A9dex_logo.png/120px-Pok%C3%A9dex_logo.png);
     background-repeat: no-repeat;
 }
 
@@ -375,7 +375,7 @@ main {
 .imagem-caixa1 {
     width: 270px;
     height: 270px;
-    background-image: url(imagens/bulbasaur.png);
+    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png);
     background-size: cover;
     background-position: right 0, 5px top 100px;
 }
@@ -539,6 +539,7 @@ main {
     margin: 15px;
     padding: 20px;
     text-align: center;
+    border-radius: 25px;
 }
 
 .caixa-interna-sobre {
@@ -547,6 +548,7 @@ main {
     background-color: #ffffff;
     margin: 5px;
     text-align: center;
+    border-radius: 25px;
 }
 
 .caixa-interna-fisio {
@@ -555,6 +557,7 @@ main {
     background-color: #ffffff;
     margin: 5px;
     text-align: center;
+    border-radius: 25px;
 }
 
 .caixa-interna-det {
@@ -564,6 +567,7 @@ main {
     margin: 15px;
     padding: 20px;
     text-align: center;
+    border-radius: 25px;
 }
 
 .nome-bulbasaur {
