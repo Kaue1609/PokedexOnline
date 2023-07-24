@@ -1,0 +1,111 @@
+/*nav*/
+#menu {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 30%;
+    height: 590px;
+    margin-top: 70px;
+    position: fixed;
+    left: 0;
+}
+
+/*As 2 listas do menu*/
+#inicio {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: solid 2px grey;
+    user-select: none;
+}
+#type-list {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    user-select: none;
+}
+/*As 2 listas do menu*/
+
+#aparecer-btns {
+    height: 110px;
+    transition: height 1s;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: solid 2px grey;
+}
+#aparecer-btns:hover {
+    height: 210px;
+}
+
+/*icones do menu*/
+.material-icons.md-24 {
+    font-size: 50px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+/*Fontes do menu*/
+.fontes-menu {
+    font-size: 35px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.fontes-menu:visited {
+    color: white;
+}
+
+/*grid dos botões de tipos*/
+#btn-tipos {
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1);
+    row-gap: 30px;
+    column-gap: 2px;
+    grid-template-areas:
+        "fogo planta fada ."
+}
+
+/*botão padrão dos tipos*/
+.input {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    border: solid 4px black;
+    cursor: pointer;
+}
+
+.input:hover {
+    border: none;
+}
+
+/*imagens inseridas nos botões de tipos*/
+.fire-type {
+    grid-area: fogo;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../imagens/image\ 22.png);
+}
+
+.plant-type {
+    grid-area: planta;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../imagens/image\ 23.png);
+}
+
+.fairy-type {
+    grid-area: fada;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../imagens/image\ 29.png);
+}

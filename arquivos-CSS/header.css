@@ -1,0 +1,21 @@
+/*topo*/
+.cabeçalho {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(252, 252, 31);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0
+}
+
+#imgheader {
+    margin-left: 19%;
+    padding-right: 2%;
+    border-right: solid 2px black;
+    height: 80%;
+    width: 120px;
+    background-image: url(../imagens/120px-Pokédex_logo.png);
+    background-repeat: no-repeat;
+}
+/*topo*/

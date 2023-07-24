@@ -1,0 +1,23 @@
+*{font-family: 'Belanosima', sans-serif;}
+
+body {
+    background-color: white;
+    margin: 0px;
+}
+
+ /*cursor*/
+ .mause {
+    cursor: pointer;
+ }
+
+#conteiner {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+/*Conteúdo*/
+#principal {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}

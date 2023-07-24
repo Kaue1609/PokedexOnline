@@ -1,283 +1,14 @@
-*{font-family: 'Belanosima', sans-serif;}
-
-body {
-    background-color: white;
-    margin: 0px;
-}
-
- /*cursor*/
- .mause {
-    cursor: pointer;
- }
-
-#conteiner {
-    background-color: rgb(0, 0, 214);
-    width: 100%;
-    margin: 0;
-}
-
-/*topo*/
-.cabeçalho {
-    height: 70px;
-    width: 100%;
-    background-color: rgb(252, 252, 31);
-    display: flex;
-    align-items: center;
-}
-
-#imgheader {
-    margin-left: 19%;
-    padding-right: 2%;
-    border-right: solid 2px black;
-    height: 80%;
-    width: 120px;
-    background-image: url(/imagens/120px-Pokédex_logo.png);
-    background-repeat: no-repeat;
-}
-/*topo*/
-
-/*Conteúdo*/
-#principal {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-}
-
-/*nav*/
-#menu {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    width: 30%;
-}
-
-/*As 3 listas do menu*/
-#inicio {
-    width: 100%;
-    height: 110px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border-bottom: solid 2px grey;
-    user-select: none;
-}
-#config {
-    width: 100%;
-    height: 110px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    border-bottom: solid 2px grey;
-    user-select: none;
-}
-#type-list {
-    width: 100%;
-    height: 110px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    user-select: none;
-}
-#Recolher {
-    display: none;
-}
-
-/*icones do menu*/
-.material-icons.md-24 {
-    font-size: 50px;
-    margin-left: 20px;
-    margin-right: 15px;
-}
-.material-icons.md-dark {
-    color: rgba(0, 0, 0, 0.54);
-}
-
-/*Fontes do menu*/
-.fontes-menu {
-    font-size: 35px;
-    font-weight: 400;
-    text-decoration: none;
-}
-.fontes-menu:visited {
-    color: white;
-}
-
-/*grid dos botões de tipos*/
-#btn-tipos {
-    margin-left: 15px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    row-gap: 30px;
-    column-gap: 2px;
-    grid-template-areas:
-        "fogo planta eletrico agua"
-        "psiquico fada fantasma escuridao"
-        "lutador terra pedra dragao"
-        "voador inseto venenoso normall"
-        "metal gelo . ."
-}
-
-/*botão padrão dos tipos*/
-.input {
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
-    border: solid 4px black;
-}
-
-.input:hover {
-    border: none;
-}
-
-/*imagens inseridas nos botões de tipos*/
-.fire-type {
-    grid-area: fogo;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 22.png);
-}
-
-.plant-type {
-    grid-area: planta;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 23.png);
-}
-
-.eletric-type {
-    grid-area: eletrico;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 26.png);
-}
-
-.water-type {
-    grid-area: agua;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 24.png);
-}
-
-.psychic-type {
-    grid-area: psiquico;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 27.png);
-}
-
-.fairy-type {
-    grid-area: fada;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 29.png);
-}
-
-.fighter-type {
-    grid-area: lutador;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 34.png);
-}
-
-.ground-type {
-    grid-area: terra;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 25.png);
-}
-
-.rock-type {
-    grid-area: pedra;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 37.png);
-}
-
-.flying-type {
-    grid-area: voador;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 31.png);
-}
-
-.dragon-type {
-    grid-area: dragao;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 30.png);
-}
-
-.dark-type {
-    grid-area: escuridao;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 28.png);
-}
-
-.ghost-type {
-    grid-area: fantasma;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 39.png);
-}
-
-.insect-type {
-    grid-area: inseto;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 35.png);
-}
-
-.poison-type {
-    grid-area: venenoso;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 32.png);
-}
-
-.normal-type {
-    grid-area: normall;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 38.png);
-}
-
-.steel-type {
-    grid-area: metal;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 33.png);
-}
-
-.ice-type {
-    grid-area: gelo;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(/imagens/image\ 36.png);
-}
+@import url(../../arquivos-CSS/global.css);
+@import url(../../arquivos-CSS/header.css);
+@import url(../../arquivos-CSS/nav.css);
+@import url(../../arquivos-CSS/footer.css);
 
 /*Grid das caixas*/
 main {
     background: transparent url(https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png);
     width: 70%;
+    margin-top: 70px;
+    margin-left: 30%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 3fr);
@@ -294,6 +25,7 @@ main {
     background-color: rgb(128, 128, 128);
     height: 350px;
     width: 260px;
+    transition: all 1s;
     border: 4px, solid, black;
     border-style: outset;
     padding: 5px;
@@ -303,7 +35,7 @@ main {
     border-radius: 10%;
 }
 .caixa-icon:hover {
-    box-shadow: 12px 10px rgba(68, 68, 68, 0.479);
+    box-shadow: 13px 12px rgba(61, 61, 61, 0.479);
 }
 
 /*box modeling das caixas*/
@@ -335,7 +67,7 @@ main {
 .imagem-caixa1 {
     width: 270px;
     height: 270px;
-    background-image: url(/imagens/bulbasaur.png);
+    background-image: url(../../imagens/bulbasaur.png);
     background-size: cover;
     background-position: right 0, 5px top 100px;
 }
@@ -343,7 +75,7 @@ main {
 .imagem-caixa2 {
     width: 270px;
     height: 270px;
-    background-image: url(/imagens/ivysaur.png);
+    background-image: url(../../imagens/ivysaur.png);
     background-size: cover;
     background-position: right 0, 5px top 100px;
 }
@@ -351,7 +83,7 @@ main {
 .imagem-caixa3 {
     width: 270px;
     height: 270px;
-    background-image: url(/imagens/Venosaur.png);
+    background-image: url(../../imagens/Venosaur.png);
     background-size: cover;
     background-position: left 0, 3px right 0, 2px top 76px;
 }
@@ -381,48 +113,3 @@ main {
     color: black;
     justify-self: flex-start;
 }
-/*Conteúdo*/
-
-/*sopé*/
-#rodapé {
-    height: 150px;
-    width: 100%;
-    background-color: rgb(252, 252, 31);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.autores {
-    font-size: 20px;
-    color: black;
-    padding-bottom: 10px;
-}
-.linkGitHub {
-    height: 50px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-}
-.gitlogo{
-    height: 50px;
-    width: 50px;
-}
-.gitlogo:first-child {
-    padding-right: 30px;
-}
-.gitlogo:last-child {
-    padding-left: 30px;
-}
-.btn-obri {
-    background-color: rgb(73, 0, 102);
-    border-style: solid;
-    border-radius: 10px;
-    color: whitesmoke;
-    height: 50px;
-    width: 150px;
-    font-size: 25px;
-}
-/*sopé*/

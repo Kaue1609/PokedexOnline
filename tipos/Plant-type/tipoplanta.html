@@ -9,12 +9,12 @@
     <meta name="description" content="uma pokedex online para pesquisar sobre seus pokemons">
     <meta name="keywords" content="pokemon, pokedex, pokedex-online, descriçao-dos-pokemons">
     <link rel="stylesheet" href="tipoplanta.css">
-    <link rel="shortcut icon" href="imagens/pokebola.jpeg">
+    <link rel="shortcut icon" href="../../imagens/pokebola.jpeg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Projeto final</title>
+    <title>TipoPlanta | Pokéline</title>
 </head>
 
 <body>
@@ -25,44 +25,25 @@
         </header>
 
         <div id="principal">
-            <nav id="menu">
+            <nav id="menu" class="menu-position">
 
-                <a href="/index.html" class="fontes-menu mause">
+                <a href="../../index.html" class="fontes-menu mause">
                     <div id="inicio">
                         <span class="material-icons md-24 md-light">home</span>
                         <h1 class="fontes-menu">Início</h1>
                     </div>
                 </a>
-                <div id="config">
-                    <span class="material-icons md-24 md-light">settings</span>
-                </div>
-                <div id="type-list">
-                    <imput onclick="MostrarTipos()" id="type-list" class="mause">
-                        <span class="material-icons md-24 md-light">sort</span>
-                        <h1 class="fontes-menu">Tipos</h1>
-                    </imput>
-                
-                </div>
-                <div id="Recolher">
+                <div id="aparecer-btns">
+                    <div id="type-list">
+                        <imput onclick="MostrarTipos()" id="type-list" class="mause">
+                            <span class="material-icons md-24 md-light">sort</span>
+                            <h1 class="fontes-menu">Tipos</h1>
+                        </imput>
+                    </div>
                     <div id="btn-tipos">
-                        <a href="/tipos/tipofogo.html"><button class="fire-type input"></button></a>
-                        <a href="/tipos/tipoplanta.html"><button class="plant-type input"></button></a>
-                        <a><button onclick="notfinished()" class="eletric-type input"></button></a>
-                        <a><button onclick="notfinished()" class="water-type input"></button></a>
-                        <a><button onclick="notfinished()" class="psychic-type input"></button></a>
-                        <a href="/tipos/tipofada.html"><button class="fairy-type input"></button></a>
-                        <a><button onclick="notfinished()" class="ghost-type input"></button></a>
-                        <a><button onclick="notfinished()" class="fighter-type input"></button></a>
-                        <a><button onclick="notfinished()" class="ground-type input"></button></a>
-                        <a><button onclick="notfinished()" class="rock-type input"></button></a>
-                        <a><button onclick="notfinished()" class="flying-type input"></button></a>
-                        <a><button onclick="notfinished()" class="dragon-type input"></button></a>
-                        <a><button onclick="notfinished()" class="dark-type input"></button></a>
-                        <a><button onclick="notfinished()" class="insect-type input"></button></a>
-                        <a><button onclick="notfinished()" class="poison-type input"></button></a>
-                        <a><button onclick="notfinished()" class="normal-type input"></button></a>
-                        <a><button onclick="notfinished()" class="steel-type input"></button></a>
-                        <a><button onclick="notfinished()" class="ice-type input"></button></a>
+                        <a href="../Fire-type/tipofogo.html"><button class="fire-type input"></button></a>
+                        <a href="tipoplanta.html"><button class="plant-type input"></button></a>
+                        <a href="../Fairy-type/tipofada.html"><button class="fairy-type input"></button></a>
                     </div>
                 </div>
             </nav>
@@ -70,21 +51,21 @@
 
                 <div class="caixa-icon caixa1">
                     <div class="imagem-caixa1"></div>
-                    <a href="/Pokémons/bulbasaur.html">
+                    <a href="../../Pokémons/Bulbasaur/bulbasaur.html">
                         <button class="grass-btn mause">Bulbasaur</button>
                     </a>
                     <div id="numero">#001</div>
                 </div>
                 <div class="caixa-icon caixa2">
                     <div class="imagem-caixa2"></div>
-                    <a href="/Pokémons/ivysaur.html">
+                    <a href="../../Pokémons/Yvisaur/ivysaur.html">
                         <button class="grass-btn mause">Ivysaur</button>
                     </a>
                     <div id="numero">#002</div>
                 </div>
                 <div class="caixa-icon caixa3">
                     <div class="imagem-caixa3"></div>
-                    <a href="/Pokémons/venusaur.html">
+                    <a href="../../Pokémons/Venusaur/venusaur.html">
                         <button class="grass-btn mause">Venusaur</button>
                     </a>
                     <div id="numero">#003</div>
@@ -96,16 +77,15 @@
         <footer id="rodapé">
             <span class="autores">Alisson Lima & Kauê Martins</span>
             <div class="linkGitHub">
-                <a href="https://github.com/alnxli"><img class="gitlogo" src="/imagens/logo GitHub.png"></a>
-                <a href="https://github.com/Kaue1609"><img class="gitlogo" src="/imagens/logo GitHub.png"></a>
+                <a href="https://github.com/alnxli"><img class="gitlogo" src="../../imagens/logo GitHub.png"></a>
+                <a href="https://github.com/Kaue1609"><img class="gitlogo" src="../../imagens/logo GitHub.png"></a>
             </div>
             <button onclick="oi()" class="btn-obri mause">Obrigado!</button>
         </footer>
 
     </div>
 
-    <script src="tipoplanta.js"></script>
-
+    <script src="../../arquivo-JS/global.js"></script>
 </body>
 
 </html>

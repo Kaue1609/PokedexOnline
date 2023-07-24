@@ -2,10 +2,6 @@ function oi() {
     alert("Muito obrigado por visitar o nosso site! <3")
 }
 
-function notfinished() {
-    alert("Em Construção")
-}
-
 function MostrarTipos() {
     let recolhe = document.getElementById("Recolher");
 
