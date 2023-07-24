@@ -1,43 +1,66 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="jigglepuff.css">
+    <link rel="shortcut icon" href="../../imagens/pokebola.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Jigglipuff</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>JigglyPuff | Pokéline</title>
 </head>
 
 <body>
-    <div id="container">
+    <div id="conteiner">
 
         <header class="cabeçalho">
             <div id="imgheader"></div>
         </header>
 
-        <main id="conteudo">
-            <h1 id="titulo">Jigglypuff Info:</h1>
-            <div id="gif">
-                <div class="tenor-gif-embed" data-postid="22713319" data-share-method="host" data-aspect-ratio="0.81875"
-                    data-width="100%"><a
-                        href="https://tenor.com/view/pokemon-jigglypuff-sing-pokemon-jigglypuff-gen1-gif-22713319">Pokemon
-                        Jigglypuff GIF</a>from <a href="https://tenor.com/search/pokemon-gifs">Pokemon GIFs</a></div>
-                <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-            </div>
-        </main>
+        <div id="principal">
+            <nav id="menu">
+                <a href="/index.html" class="fontes-menu mause">
+                    <div id="inicio">
+                        <span class="material-icons md-24 md-light">home</span>
+                        <h1 class="fontes-menu">Início</h1>
+                    </div>
+                </a>
+                <div id="aparecer-btns">
+                    <div id="type-list">
+                        <imput onclick="MostrarTipos()" id="type-list" class="mause">
+                            <span class="material-icons md-24 md-light">sort</span>
+                            <h1 class="fontes-menu">Tipos</h1>
+                        </imput>
+                    </div>
+                    <div id="btn-tipos">
+                        <a href="../../tipos/Fire-type/tipofogo.html"><button class="fire-type input"></button></a>
+                        <a href="../../tipos/Plant-type/tipoplanta.html"><button class="plant-type input"></button></a>
+                        <a href="../../tipos/Fairy-type/tipofada.html"><button class="fairy-type input"></button></a>
+                    </div>
+                </div>
+            </nav>
+            <main class="conteúdo">
+
+            </main>
+        </div>
 
         <footer id="rodapé">
             <span class="autores">Alisson Lima & Kauê Martins</span>
             <div class="linkGitHub">
-                <a href="https://github.com/alnxli"><img class="gitlogo" src="/imagens/logo GitHub.png"></a>
-                <a href="https://github.com/Kaue1609"><img class="gitlogo" src="/imagens/logo GitHub.png"></a>
+                <a href="https://github.com/alnxli"><img class="gitlogo" src="../../imagens/logo GitHub.png"></a>
+                <a href="https://github.com/Kaue1609"><img class="gitlogo" src="../../imagens/logo GitHub.png"></a>
             </div>
             <button onclick="oi()" class="btn-obri mause">Obrigado!</button>
         </footer>
-
-        <script src="jigglypuff.js"></script>
     </div>
+
+    <script src="../../arquivo-JS/global.js"></script>
+
 </body>
 
 </html>
