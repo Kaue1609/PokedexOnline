@@ -9,7 +9,11 @@ body {
  .mause {
     cursor: pointer;
  }
+ .mause2 {
+    cursor: text;
+ }
 
+ /*container príncipal*/
 #conteiner {
     background-color: rgb(255, 255, 255);
     width: 100%;

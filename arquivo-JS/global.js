@@ -1,5 +1,5 @@
 function oi() {
-    alert("Muito obrigado por visitar o nosso site! <3")
+    alert("Muito obrigado por visitar o nosso site! Esperamos que tenho gostado <3")
 }
 
 function MostrarTipos() {

@@ -2,17 +2,60 @@
 @import url(../../arquivos-CSS/header.css);
 @import url(../../arquivos-CSS/nav.css);
 @import url(../../arquivos-CSS/footer.css);
+@import url(../../arquivos-CSS/main-pokemons.css);
 
-/*Grid das caixas*/
-main {
-    background: transparent url(https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png);
-    width: 70%;
-    margin-top: 70px;
-    margin-left: 30%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 2fr);
-    row-gap: 10px;
-    column-gap: 1px;
-    ;
+/*Imagem e nome do Pokemon*/
+.img-pokemon {
+    background-image: url(../../imagens/jigglepuff.png);
+    background-size: cover;
 }
+
+.nome-pokemon {
+    color:rgb(255, 113, 236);
+    font-size: 40px;
+    margin: 0px;
+}
+/*Imagem e nome do Pokemon*/
+
+/*Caixa de Informações*/
+#info-geral{
+    height: 90%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    border-style: outset;
+    background-color: rgb(255, 113, 236);
+    transition: 1s;
+}
+#info-geral:hover {
+    box-shadow: 15px 8px rgb(177, 177, 177);
+}
+/*Caixa de Informações*/
+
+/*Caixa de Evoluções*/
+.bloco {
+    height: 50px;
+    width: 160px;
+    margin: 15px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 25px;;
+    background-color: rgb(255, 113, 236);
+}
+
+.ver1 {
+    background-image: url(../../imagens/Igglybuff.png);
+    background-size: cover;
+}
+.ver2 {
+    background-image: url(../../imagens/jigglepuff.png);
+    background-size: cover;
+}
+.ver3 {
+    background-image: url(../../imagens/Wigglytuff.png);
+    background-size: cover;
+}
+/*Caixa de Evoluções*/
