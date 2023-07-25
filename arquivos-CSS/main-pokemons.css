@@ -26,6 +26,8 @@ main {
     width: 90%;
     margin: 30px;
     border-radius: 25px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
     background: transparent url(https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png);
     display: flex;
     flex-direction: column;
@@ -83,6 +85,8 @@ main {
 
 #evolucoes-caixa {
     background: transparent url(https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png);
+    border-top: 3px solid black;
+    border-left: 3px solid black;
     border-radius: 15px;
     margin-bottom: 20px;
     height: 90%;

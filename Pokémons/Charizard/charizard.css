@@ -2,110 +2,61 @@
 @import url(../../arquivos-CSS/header.css);
 @import url(../../arquivos-CSS/nav.css);
 @import url(../../arquivos-CSS/footer.css);
+@import url(../../arquivos-CSS/main-pokemons.css);
 
-/*Grid das caixas*/
-main {
-    background: transparent url(https://assets.pokemon.com/static2/_ui/img/chrome/body_gray_bg.png);
-    width: 70%;
-    margin-top: 70px;
-    margin-left: 30%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 2fr);
-    row-gap: 10px;
-    column-gap: 1px;
-    grid-template-areas:
-        "poke01 poke02 poke03"
-        "poke04 poke05 poke06"
-        "poke07 . ."
-    ;
-}
-
-/*modelo padrão de caixa*/
-.caixa-icon {
-    background-color: rgb(128, 128, 128);
-    height: 350px;
-    width: 260px;
-    border: 4px, solid, black;
-    border-style: outset;
-    padding: 5px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 18px;
-    border-radius: 10%;
-}
-
-/*box modeling das caixas*/
-.caixa1 {
-    grid-area: poke01;
-    background-color: #0c92f1;
-    height: 800px;
-}
-
-/*imagens dos pokémons nas caixas*/
-.imagem-caixa1 {
-    width: 270px;
-    height: 270px;
-    background-image: url(https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png);
+/*Imagem e nome do Pokemon*/
+.img-pokemon {
+    background-image: url(../../imagens/charizard.png);
     background-size: cover;
-    background-position: right 0, 5px top 100px;
 }
 
-.caixa-interna-geral {
-    width: 179px;
-    height: center;
-    background-color:#e74f4f;
-    margin: 15px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
+.nome-pokemon {
+    color:rgb(187, 0, 0);
+    font-size: 40px;
+    margin: 0px;
 }
+/*Imagem e nome do Pokemon*/
 
-.caixa-interna-sobre {
-    width: 55px;
-    height: 23px;
-    background-color: #ffffff;
-    margin: 5px;
-    text-align: center;
-    border-radius: 25px;
+/*Caixa de Informações*/
+#info-geral{
+    height: 90%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    border-style: outset;
+    background-color: rgb(211, 0, 0);
+    transition: 1s;
 }
-
-.caixa-interna-fisio {
-    width: 75px;
-    height: 23px;
-    background-color: #ffffff;
-    margin: 5px;
-    text-align: center;
-    border-radius: 25px;
+#info-geral:hover {
+    box-shadow: 15px 8px rgb(177, 177, 177);
 }
+/*Caixa de Informações*/
 
-.caixa-interna-det {
-    width: 179px;
-    height: center;
-    background-color:#e74f4f;
-    margin: 15px;
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
-}
-
-.nome-bulbasaur {
-    width: 179px;
-    height: center;
-    background-color: #e74f4f;
-    margin: 15px;
-    padding: 20px;
-    text-align: center;
-}
-
-/*botão*/
-.btn {
-    width: 250px;
+/*Caixa de Evoluções*/
+.bloco {
     height: 50px;
-    background-color: rgb(239, 243, 0);
-    border: 2px solid rgb(0, 77, 0);
-    border-radius: 25px;
-    font-size: 22px;
+    width: 160px;
+    margin: 15px;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 25px;;
+    background-color: rgb(211, 0, 0);
 }
 
+.ver1 {
+    background-image: url(../../imagens/charmander.png);
+    background-size: cover;
+}
+.ver2 {
+    background-image: url(../../imagens/charmeleon.png);
+    background-size: cover;
+}
+.ver3 {
+    background-image: url(../../imagens/charizard.png);
+    background-size: cover;
+}
+/*Caixa de Evoluções*/
 
